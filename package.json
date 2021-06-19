@@ -22,10 +22,14 @@
     "@vue/compiler-sfc": "^3.0.0",
     "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.1.0",
+    "css-loader": "^5.2.6",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.0.0",
+    "node-sass": "^6.0.0",
     "prettier": "^2.2.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^2.0.0",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2"
   },
@@ -42,11 +46,14 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
-  },
+    "rules":  {
+
+    }
+   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead"
   ]
+
 }
