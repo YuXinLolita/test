@@ -9,7 +9,7 @@ export default createStore({
       },
       {
           title:"睡觉",
-          complete: false,
+          complete: true,
       },
       {
           title:"敲代码",
@@ -28,7 +28,7 @@ export default createStore({
     },
 
     clear(state,payload) {
-      state.lost = payload;
+      state.list = payload;
     }
     
     

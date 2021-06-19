@@ -11,10 +11,12 @@
 import { defineComponent, ref} from "vue";
 export default  defineComponent ({
     name:"NewHeader",
-    setup() {
-        let value = ref("请输入任务名称");
+    setup(props,ctx) {
+        let value = ref("");
         let enter = () => {
-            console.log(value.value);
+            //console.log(value.value);
+            ctx.emit("add",value.value) ;
+            value.value = "";
         }
         return{
             value,
